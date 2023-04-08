@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--CONCEPTS
+ Edit text For every addition, get an ET for every item and one button to update
+ Every button should come with a -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+        <!-- needed a way to keep the 0 at the bottom
+         Found a way to put the 0 at the bottom via stackoverflow using nested Linear Layouts
+        Link: https://stackoverflow.com/questions/59804339/constrain-two-items-to-top-and-bottom-inside-linear-layout/59805091#59805091
+        -->
+
+    <ListView
+        android:id="@+id/travelList"
+        android:layout_width="match_parent"
+        android:layout_height="495dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical">
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TotalFootprint"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+        <TextView
+            android:id="@+id/totalFootprint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TotalFuelCost"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+        <TextView
+            android:id="@+id/totalFuelCost"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/updateList"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/purple_200"
+            android:clickable="true"
+            android:contentDescription="@string/adddetails"
+            app:srcCompat="@android:drawable/ic_input_add" />
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

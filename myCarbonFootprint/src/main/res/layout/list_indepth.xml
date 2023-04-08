@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="@string/add_a_gas_station_name"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textAlignment="center"
+        />
+
+    <EditText
+        android:id="@+id/editDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="@string/date_yyyy_mm_dd"
+        android:minHeight="48dp"
+        android:textAlignment="center"
+        android:inputType="date"/>
+
+    <EditText
+        android:id="@+id/editFuelType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="@string/gasoline_or_diesel"
+        android:minHeight="48dp"
+
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/editPPL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="@string/price_per_liter"
+        android:minHeight="48dp"
+        android:textAlignment="center"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/editAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="@string/amount_filled"
+        android:minHeight="48dp"
+        android:textAlignment="center"
+        android:inputType="numberDecimal"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Amount Spent (in $)"
+        android:minHeight="48dp"
+        android:textAlignment="center"
+        android:textSize="25dp"/>
+    <TextView
+        android:id="@+id/fuelPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="00.00"
+        android:minHeight="48dp"
+        android:textAlignment="center"
+        android:textSize="45dp"/>
+
+
+
+</LinearLayout>

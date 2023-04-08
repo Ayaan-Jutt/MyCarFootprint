@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ajutt-MyCarbonFootprint</string>
+    <string name="station">Station</string>
+    <string name="gasoline">gasoline</string>
+    <string name="footprint">footprint</string>
+    <string name="TotalFootprint">0</string>
+    <string name="adddetails">AddDetails</string>
+    <string name="add_a_gas_station_name">Add a gas station name</string>
+    <string name="date_yyyy_mm_dd">Date (yyyy-mm-dd)</string>
+    <string name="gasoline_or_diesel">Gasoline (G) or Diesel (D)</string>
+    <string name="price_per_liter">Price per Liter (Must be 0 or greater)</string>
+    <string name="amount_filled">Amount Filled (Must be 0 or greater)</string>
+</resources>
